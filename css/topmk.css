@@ -1,0 +1,87 @@
+
+* {
+  font-family: sans;
+  font-size: 3vh;
+}
+
+body{
+ background: #eee;
+}
+
+h2 {
+   font-family: sans;
+   text-align: center;
+}
+
+.panel{
+  height: 100vh;
+  width: 49%;
+}
+
+#leftpanel{
+   float: left;
+}
+
+#rightpanel{
+   float: right;
+}
+
+.card{
+    width: 60vh;
+    height: 80vh;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    border-radius: 4%;
+    background: #4bb5c1;
+}
+
+.properties{
+  width: 80%;
+  height: 40%;
+  margin-left: 10%;
+  margin-top: 4%;
+  border-radius: 4%;
+}
+
+.image{
+  width: 80%;
+  height: 35%;
+  margin-left: 10%;
+  margin-top: 4%;
+  border-radius: 4%;
+}
+
+.cardback{
+   background: no-repeat center url("../img/top_mk_back.png");
+   background-size: cover;
+   border: 1px solid #555;
+}
+
+.score{
+  text-align: center;
+  font-family: sans;
+  font-size: 6vh;
+  margin-top: 3vh;  
+  color: #444;
+}
+
+ul {
+list-style-type: none;
+padding-left: 0px;
+}
+
+li {
+   margin-top: 4%;
+   padding-bottom: 1%;
+   border-bottom: 2px solid #333;
+   color: #333;
+}
+
+.propvalue{
+   float: right;
+}
+
+.proplable{
+   float: left;
+}
