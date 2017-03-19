@@ -12,20 +12,20 @@ var conf = {
       }},
       {name: "Health", comp: function(data){ 
 	  console.log(data["global:health"]);
-	  var res = 0;;
-	  for (var x in data["global:health"]){
-	      var o = data["global:health"][x];
-	      if (o["global:yearly"]){
-		  if (o["global:yearly"][0]["global:2007_-_2011"]) res = Math.round(parseFloat(o["global:yearly"][0]["global:2007_-_2011"][0]));
-	      }
-	  }
-	  return res;
+//	  var res = 0;;
+//	  for (var x in data["global:health"]){
+//	      var o = data["global:health"][x];
+//	      if (o["global:yearly"]){
+//		  if (o["global:yearly"][0]["global:2007_-_2011"]) res = Math.round(parseFloat(o["global:yearly"][0]["global:2007_-_2011"][0]));
+//	      }
+//	  }
+//	  return res;
 //	  return Math.floor(parseFloat(data["global:health"][0]["global:yearly"][0]["global:2007_-_2001"][0]));
-//Math.floor(
-//	      ((parseInt(data["global:health"][0]["global:very_good_health"][0])+
-//	       parseInt(data["global:health"][0]["global:good_health"][0]))
-//		  /
-//		  parseInt(data["global:usualResidents"][0]["global:all_usual_residents"][0]))*100);
+          return Math.floor(
+	      ((parseInt(data["global:health"][0]["global:very_good_health"][0])+
+	       parseInt(data["global:health"][0]["global:good_health"][0]))
+		  /
+		  parseInt(data["global:usualResidents"][0]["global:all_usual_residents"][0]))*100);
       }},
       {name: "Qualification", comp: function(data){ 
 	  return Math.floor(((
