@@ -118,7 +118,7 @@ TMKCards.prototype.getProperties = function(display){
 	this.displayProperties();
 	return;
     }
-    if(typeof(Storage) !== "undefined" && localStorage.getItem("tmk"+this.cards[this.top]) && false) {
+    if(typeof(Storage) !== "undefined" && localStorage.getItem("tmk"+this.cards[this.top])) {
 	this.topprops=JSON.parse(localStorage.getItem("tmk"+this.cards[this.top]));
 	console.log("from storage "+this.cards[this.top]);
 	this.propertiesObtained=true;
